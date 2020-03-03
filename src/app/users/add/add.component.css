@@ -1,0 +1,12 @@
+.user-container {
+  margin: 0;
+  padding: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #FFF;
+  background: linear-gradient(black, white);
+  border-radius: .5rem;
+}

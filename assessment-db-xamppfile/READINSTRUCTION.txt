@@ -1,0 +1,2 @@
+rename folder after pasting in htdocs
+remove -xamppfile 
