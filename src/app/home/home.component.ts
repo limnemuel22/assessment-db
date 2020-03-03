@@ -9,7 +9,7 @@ import { ServicesService } from "../services/services.service";
   styleUrls: ["./home.component.css"]
 })
 export class HomeComponent implements OnInit {
-  users: any;
+  users: any = [];
   constructor(
     private formBuilder: FormBuilder,
     private router: Router,
@@ -18,12 +18,22 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.getUsers();
+
+    if (this.users.length <= 0) {
+      this.users = [
+        {
+          username: "nem22",
+          password: "khazlie22",
+          firstName: "Nemuel",
+          lastName: "Lim"
+        }
+      ];
+    }
   }
 
   getUsers() {
     this.apiService.getUsers().subscribe((data: any) => {
       this.users = data;
-      console.log(this.users);
     });
   }
 

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 03, 2020 at 02:06 PM
+-- Generation Time: Mar 03, 2020 at 02:35 PM
 -- Server version: 10.1.35-MariaDB
 -- PHP Version: 7.2.9
 
@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `users` (
-  `ID` int(10) NOT NULL,
+  `id` int(10) NOT NULL,
   `username` varchar(2048) NOT NULL,
   `password` varchar(2048) NOT NULL,
   `firstName` varchar(2048) NOT NULL,
@@ -40,7 +40,7 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`ID`, `username`, `password`, `firstName`, `lastName`) VALUES
+INSERT INTO `users` (`id`, `username`, `password`, `firstName`, `lastName`) VALUES
 (1, 'nem22', 'khazlie22', 'Nemuel', 'Lim');
 
 --
@@ -51,7 +51,7 @@ INSERT INTO `users` (`ID`, `username`, `password`, `firstName`, `lastName`) VALU
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
-  ADD PRIMARY KEY (`ID`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -61,7 +61,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -1,2 +1,4 @@
 rename folder after pasting in htdocs
 remove -xamppfile 
+
+import sql file to phpmyadmin
